@@ -1,0 +1,26 @@
+{
+  "name": "desafioapibasica",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "node src/index.js",
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "author": "Murilo",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.7",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3"
+  }
+}
