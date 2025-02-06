@@ -23,7 +23,7 @@ export const createUserSchema = z.object({
       required_error: "O campo senha é obrigatório",
       invalid_type_error: "O campo senha deve ser uma string",
     })
-    .nonempty("O campo senha não pode ser vazia")
+    .nonempty("O campo senha não pode ser vazio")
     .min(8, { message: "O campo senha precisa ter pelo menos 8 caracteres" })
     .regex(/[A-Z]/, {
       message: "O campo senha deve conter pelo menos uma letra maiúscula",
