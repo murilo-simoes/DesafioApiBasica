@@ -58,20 +58,22 @@ http://localhost:3000/api-docs
 ```
 Você pode usar a interface do Swagger para testar as rotas da API diretamente pelo navegador!
 
+---
 
-##Exemplos de Rotas da API
-###Usuários
+## Exemplos de Rotas da API
+### Usuários
 - **GET /users** - Lista todos os usuários.
 - **POST /users** - Cria um novo usuário.
 - **PUT /users/:id** - Atualiza um usuário existente.
 - **DELETE /users/:id** - Remove um usuário.
-###Tarefas
+### Tarefas
 - **GET /tasks** - Lista todas as tarefas.
 - **POST /tasks** - Cria uma nova tarefa.
 - **PUT /tasks/:id** - Atualiza uma tarefa existente.
 - **DELETE /tasks/:id** - Remove uma tarefa.
 
-##📦 Scripts Disponíveis
+---
+## 📦 Scripts Disponíveis
 Alguns scripts úteis para o desenvolvimento:
 **Rodar em ambiente de desenvolvimento:**
 ```bash
