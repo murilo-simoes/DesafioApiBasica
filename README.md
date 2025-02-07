@@ -62,15 +62,15 @@ Você pode usar a interface do Swagger para testar as rotas da API diretamente p
 
 ## Exemplos de Rotas da API
 ### Usuários
-- **GET /users** - Lista todos os usuários.
-- **POST /users** - Cria um novo usuário.
-- **PUT /users/:id** - Atualiza um usuário existente.
-- **DELETE /users/:id** - Remove um usuário.
+- **GET /user/list** - Lista todos os usuários.
+- **POST /user/add** - Cria um novo usuário.
+- **PATCH /user/edit/:id** - Atualiza um usuário existente.
+- **DELETE /user/delete/:id** - Deleta um usuário.
 ### Tarefas
-- **GET /tasks** - Lista todas as tarefas.
-- **POST /tasks** - Cria uma nova tarefa.
-- **PUT /tasks/:id** - Atualiza uma tarefa existente.
-- **DELETE /tasks/:id** - Remove uma tarefa.
+- **GET /task/list** - Lista todas as tarefas.
+- **POST /task/add** - Cria uma nova tarefa.
+- **PUT /task/edit/:id** - Atualiza o status de uma tarefa existente.
+- **DELETE /task/delete/:id** - Deleta uma tarefa.
 
 ---
 ## 📦 Scripts Disponíveis
