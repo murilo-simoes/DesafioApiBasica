@@ -3,7 +3,7 @@ import mongoose from "../config/db";
 const schema = new mongoose.Schema({
   titulo: { type: String, required: true },
   descricao: { type: String, required: false },
-  stats: {
+  status: {
     type: String,
     required: true,
     enum: ["pendente", "em progresso", "concluida"],

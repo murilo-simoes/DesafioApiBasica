@@ -15,7 +15,7 @@ router.get("/task/list", async (req: Request, res: Response) => {
 });
 
 //Listar tarefas por usuario - /task/list/user/:id
-router.get("/task/list/user/:id", async (req: Request, res: Response) => {
+router.get("/task/list/:id", async (req: Request, res: Response) => {
   await getTaskListByUserId(req, res);
 });
 

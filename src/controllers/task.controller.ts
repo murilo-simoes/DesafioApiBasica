@@ -71,7 +71,7 @@ export const addTask = async (req: Request, res: Response) => {
     const task = new Task({
       titulo: data.titulo,
       descricao: data.descricao,
-      stats: data.stats,
+      status: data.status,
       usuario_id: data.usuario_id,
     });
 
@@ -99,7 +99,7 @@ export const editTaskStatusById = async (req: Request, res: Response) => {
     const data = updateTaskSchema.parse(req.body);
 
     const task = await Task.findByIdAndUpdate(id, {
-      stats: data.stats,
+      status: data.status,
     });
 
     if (!task) {

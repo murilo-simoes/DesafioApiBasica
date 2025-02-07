@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "test": "node src/index.js",
+    "build": "tsc",
+    "start": "node dist/index.js",
     "dev": "ts-node-dev src/index.ts"
   },
   "author": "Murilo",
@@ -13,6 +14,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mongoose": "^8.9.7",
+    "swagger-ui-express": "^5.0.1",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "zod": "^3.24.1"
@@ -21,6 +23,7 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.1",
+    "@types/swagger-ui-express": "^4.1.7",
     "typescript": "^5.7.3"
   }
 }

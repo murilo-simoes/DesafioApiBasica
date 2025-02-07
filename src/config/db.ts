@@ -1,7 +1,8 @@
-import mongoose from 'mongoose';
+import mongoose, { mongo } from "mongoose";
+
+const mongoUri = process.env.MONGO_URI;
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb+srv://murilorsimoes:ZNwsKiPg7KFYZOJd@desafioapibasica.f36dn.mongodb.net/?retryWrites=true&w=majority&appName=DesafioApiBasica");
+mongoose.connect(mongoUri);
 
-
-export default mongoose
+export default mongoose;
