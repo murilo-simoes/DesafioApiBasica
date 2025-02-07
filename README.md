@@ -11,6 +11,7 @@ Esta é uma API simples de **ToDo List** desenvolvida como parte de um desafio t
 - **Node.js**
 - **Express**
 - **TypeScript**
+- **Zod**
 - **MongoDB**
 - **Mongoose**
 - **Swagger** (para documentação da API)
