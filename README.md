@@ -11,6 +11,8 @@ Esta é uma API simples de **ToDo List** desenvolvida como parte de um desafio t
 - **Node.js**
 - **Express**
 - **TypeScript**
+- **MongoDB**
+- **Mongoose**
 - **Swagger** (para documentação da API)
 - **Docker** (para containerização)
 - **Docker Compose** (para facilitar a inicialização do ambiente)
@@ -68,6 +70,7 @@ Você pode usar a interface do Swagger para testar as rotas da API diretamente p
 - **DELETE /user/delete/:id** - Deleta um usuário.
 ### Tarefas
 - **GET /task/list** - Lista todas as tarefas.
+- **GET /task/list/:id** - Lista todas as tarefas de um usuário.
 - **POST /task/add** - Cria uma nova tarefa.
 - **PUT /task/edit/:id** - Atualiza o status de uma tarefa existente.
 - **DELETE /task/delete/:id** - Deleta uma tarefa.
