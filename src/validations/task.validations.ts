@@ -25,20 +25,27 @@ export const createTaskSchema = z.object({
     })
     .trim()
     .refine((id) => mongoose.Types.ObjectId.isValid(id), {
-      message: "ID inválido.",
+      message: "ID inválido",
     }),
   status: z
-    .enum(["pendente", "em progresso", "concluida"], {
+    .string()
+    .transform((val) => val.normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
+    .refine((val) => ["pendente", "em progresso", "concluida"].includes(val), {
       message:
-        "O campo status deve ser 'pendente', 'em progresso' ou 'concluida'.",
+        "O campo status deve ser 'pendente', 'em progresso' ou 'concluida'",
     })
     .optional(),
 });
 
 export const updateTaskSchema = z.object({
-  status: z.enum(["pendente", "em progresso", "concluida"], {
-    message:
-      "O campo status deve ser 'pendente', 'em progresso' ou 'concluida'.",
-    required_error: "O campo status é obrigatório.",
-  }),
+  status: z
+    .string()
+    .transform((val) => val.normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
+    .refine((val) => val.length > 0, {
+      message: "O campo status é obrigatório",
+    })
+    .refine((val) => ["pendente", "em progresso", "concluida"].includes(val), {
+      message:
+        "O campo status deve ser 'pendente', 'em progresso' ou 'concluida'",
+    }),
 });
