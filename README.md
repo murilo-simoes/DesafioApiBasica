@@ -25,14 +25,14 @@ Esta é uma API simples de **ToDo List** desenvolvida como parte de um desafio t
 Primeiro, você precisará clonar o repositório da aplicação para a sua máquina local. Execute o seguinte comando no terminal:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/murilo-simoes/ToDoListApi.git
 ```
 
 ### 2. Acesse a Pasta do Projeto
 Entre na pasta do projeto clonado:
 
 ```bash
-cd seu-repositorio
+cd ToDoListApi
 ```
 ### 3. Inicialize a Aplicação com Docker
 Para facilitar o processo, foi configurado um arquivo ```docker-compose.yml ```. Basta rodar o seguinte comando para construir e iniciar a aplicação:
